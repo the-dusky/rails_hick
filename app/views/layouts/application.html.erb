@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Hickoree's</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body class="<%= params[:controller].parameterize %>_controller">
+		<div class="container">
+			<header class="container_16">
+				<%= render :partial => 'layouts/header' %>
+			</header>
+			<div class="container_16">
+				<nav class="grid_3 store-navigation">
+					<%= render :partial => 'layouts/navigation' %>
+				</nav>
+				<section class="grid_13 main">
+					<%= yield %>
+				</section>
+			</div>
+			<footer class="container_16">
+				<div id="holding_container">
+				</div>
+				<div id="x_scroll_holder" style="display: none;">
+				</div>
+				<div id="y_scroll_holder" style="display: none;">
+				</div>
+				<input type="hidden" id="fast-type-holder" value=""/>
+			    </div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<div class="grid_7 site_logo">
+	<%= link_to image_tag(site_logo, :alt => "Hickorees Logo"), root_path %>
+</div>
+<div class="grid_9 columns cart">
+	<div class="container_16 omega cart_links">
+		<%= link_to "SHOPPING BASKET", cart_path %>
+		<%= link_to image_tag("shopping_basket.gif"), cart_path, :id => 'cart_image' %>
+		<%= link_to "FREE GROUND SHIPPING OVER $100", '#', :id => 'announcement' %>
+	</div>
+	<div class="container_16 cart_info">
+		<div class="cart_infos" id="cart_total">TOTAL:&nbsp;&nbsp;$695.00</div>
+		<div class="cart_infos" id="cart_items">ITEMS:&nbsp;&nbsp;1</div>
+	</div>
+</div>

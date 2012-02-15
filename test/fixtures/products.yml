@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  brand_id: 1
+  name: MyString
+  short_name: MyString
+  internal_name: MyString
+  description: MyText
+  price: 9.99
+  weight: 9.99
+  tax_category: MyString
+  is_restockable: 1
+  is_visible: 1
+  is_deleted: 1
+
+two:
+  brand_id: 1
+  name: MyString
+  short_name: MyString
+  internal_name: MyString
+  description: MyText
+  price: 9.99
+  weight: 9.99
+  tax_category: MyString
+  is_restockable: 1
+  is_visible: 1
+  is_deleted: 1

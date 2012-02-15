@@ -1,0 +1,38 @@
+<!-- <div class="alert-div" style="display: none;">
+	<div id="alert-text">
+        <span style="font-size: 12px; font-weight: bold;">ALERT:</span>
+        <br/>
+        <div id="alert-message">
+       	</div>
+		</div>
+	<br />
+	<a class="close-alert-button" href="#" onclick="return false;" style="font-weight: bold;">CLOSE X</a>
+	<br />
+</div>
+<div id="image-area-wrapper">
+<div class="image-area-block">
+	<div class="image-area-block-header">
+		<span>
+			everything
+		</span>
+	</div>
+	<a href="/brand/the-hill-side/product/n21-048-leaf-camo-print-satin-weave-chino-bandana" class="tooltip" id="788" style="">
+		<img src="http://media2.hickorees.com/image/N21-048_M1.jpg?1"/>
+		<span style="display: none;">
+			<b>THE HILL-SIDE</b><br/>
+			&quot;Leaf Camo&quot; Bandana<br/>
+			$50.00
+		</span>
+	</a>
+</div> -->
+<script type="text/template" id="page_template">
+	<span class="album_title"><@= title @></span>
+	<span class="album_name"><@= artist @></span>
+	<ol class="tracks">
+		<@ _.each(tracks, function(track) { @>
+			<li><@= track.title @></li>
+		<@	});  @>
+	</ol>
+</script>
+<div id="container">
+</div>

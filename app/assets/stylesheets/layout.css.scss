@@ -1,0 +1,24 @@
+$background-color: #EBE8E6;
+$fonts: Verdana, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-color-default: #4D4D4D;
+$site-width: 1063px;
+
+body {
+	background: $background-color  !important;
+	font-family: $fonts !important;
+	color: $font-color-default !important;
+}
+
+.container {
+	max-width: 1400px  !important;
+	min-width: 960px  !important;
+	margin: auto  !important;
+}
+
+header {
+	height: 120px;
+}
+
+.stuff {
+	
+}

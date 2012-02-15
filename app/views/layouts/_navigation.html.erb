@@ -1,0 +1,38 @@
+<ul id="nav-top-list">
+	<% @blanket_categories.each do |blanket_category| %>
+		<li>
+			<span class="special_category" id="<%= blanket_category.id %>" onclick="return false;">
+				<%= blanket_category.name %>
+			</span>
+		</li>
+	<% end %>
+</ul>
+<input type="text" class="input-text" id="left-nav-search-input"/>
+<div id="file_cabinet">
+	<div class="file-tabs"  id="category-tab">
+	    CATEGORIES
+	</div>
+	<div class="file-tabs" id="brand-tab">
+	    BRANDS
+	</div>
+	<div id="file">
+		<ul class="file-contents-lists" id="category-file-contents-list">
+			<% @categories.each do |category| %>
+				<li class="file-contents-list-item">
+					<span class="normal_category" id="<%= category.id %>" onclick="return false;">
+						<%= category.name %>
+					</span>
+				</li>
+			<% end %>
+		</ul>
+        <ul class="file-contents-lists" id="brand-file-contents-list" style="display: none">
+			<% @brands.each do |brand| %>
+				<li class="file-contents-list-item">
+					<span class="normal_category" id="<%= brand.id %>" onclick="return false;">
+						<%= brand.name %>
+					</span>
+				</li>
+			<% end %>
+		</ul>
+	</div>
+</div>
